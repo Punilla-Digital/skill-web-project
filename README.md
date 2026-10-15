@@ -1,36 +1,51 @@
 # Web Project
 
-Skill básica de ejemplo creada por Punilla Digital para organizar las etapas de un proyecto web.
+Habilidad completa de Punilla Digital para organizar y desarrollar proyectos web desde el brief hasta la publicación. Reemplaza la versión básica de este repositorio.
 
-## Alcance
-Etapas, entregables, revisiones, registro de decisiones y checklist final. Esta versión prepara contenido e instrucciones; no incluye scripts, integraciones ni exportación automática de archivos.
+## Qué incluye
+
+- Relevamiento comercial, alcance y criterios de aceptación.
+- Investigación de mercado y referencias.
+- Tres direcciones visuales comparables y registro de la elección.
+- Arquitectura, contenido e inventario de fotos y videos.
+- Implementación por etapas, feedback y documentación de decisiones.
+- Revisión responsive, accesibilidad y SEO básico.
+- Preparación de demos, revisión del cliente y publicación autorizada.
+- Script para crear carpetas y documentación sin sobrescribir archivos.
+- Icono y metadatos para agentes compatibles.
+
+## Archivos
+
+- [SKILL.md](SKILL.md): procedimiento completo.
+- [references/project-structure.md](references/project-structure.md): estructura adaptable.
+- [scripts/init_project.py](scripts/init_project.py): inicializador.
+- [agents/openai.yaml](agents/openai.yaml): nombre, prompt e icono.
+- [assets/icon.svg](assets/icon.svg): icono de la habilidad.
 
 ## Uso
-- Consultar [SKILL.md](SKILL.md) y proporcionar los datos de entrada que indica.
-- En un agente compatible, colocar la carpeta `web-project` con el archivo `SKILL.md` en el directorio de skills que admita ese entorno.
-- En otros asistentes, adjuntar o pegar las instrucciones como contexto. Esto no garantiza instalación ni activación automática.
 
-## Personalizar la marca
-Cambiar la sección «Identidad configurable» en SKILL.md o indicar la configuración en cada pedido:
+En un agente compatible, copiar la carpeta completa con el nombre `web-project` a su directorio de habilidades. Conservar scripts, referencias e iconos junto a SKILL.md. Subir el repositorio a GitHub no instala automáticamente la habilidad en ChatGPT.
 
-```text
-Marca: Mi negocio
-Logo: archivo adjunto
-Colores: #7C3AED, #F97316 y #FFFFFF
-Tipografía: sans serif o la fuente de mi marca
-Tema: claro u oscuro
-Tono: profesional y directo
+Ejemplo de pedido:
+
+> Usá Web Project para organizar una web de un hotel. Investigá referencias, proponé tres estilos y registrá el proceso por etapas.
+
+Inicializar un proyecto con Python 3:
+
+```bash
+python scripts/init_project.py /ruta/al/proyecto --name "Mi proyecto"
 ```
 
-La paleta incluida es ilustrativa. No se incluye un archivo de logo; utilizar uno propio. La identidad afecta la presentación cuando corresponde, sin cambiar datos o cálculos.
+Ejecutar desde la carpeta de esta habilidad o usar la ruta completa del script. Se crean ocho documentos en docs/ y carpetas para investigación, recursos, tres propuestas, síntesis, revisiones y despliegue. El script conserva archivos existentes; no instala dependencias, inicia Git ni publica.
 
-## Ejemplo de pedido
-> Organizá un proyecto de web profesional de cinco páginas.
+## Requisitos y alcance
 
-## Resultado esperado
-Etapas, entregables, revisiones, registro de decisiones y checklist final.
+El inicializador usa únicamente la biblioteca estándar de Python. La implementación del sitio requiere las herramientas del stack elegido. Investigación, capturas, informes PDF y QR necesitan herramientas equivalentes disponibles en el agente; no se incluyen habilidades de terceros.
 
-## Créditos
-[Punilla Digital](https://punilladigital.com.ar/) · [Catálogo de Skills](https://punilladigital.com.ar/skils/)
+El método toma como referencia una experiencia previa con PGB, pero no impone su sector, estética ni número de páginas. No incluye archivos privados ni recursos del cliente. Adaptar identidad, alcance y estructura a cada proyecto.
 
-Consultar LICENSE, si está presente, para las condiciones de uso.
+## Origen
+
+Copia de la habilidad instalada en Complementos, publicada el 15/10/2026. Esta publicación no modifica la habilidad instalada.
+
+[Punilla Digital](https://punilladigital.com.ar/) · [Licencia](LICENSE)

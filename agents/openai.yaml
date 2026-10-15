@@ -1,0 +1,14 @@
+interface:
+  display_name: Web Project
+  short_description: Proyectos web por etapas con método Punilla Digital
+  default_prompt: Usá $web-project para organizar y desarrollar un sitio profesional,
+    desde el brief hasta la revisión del cliente y la publicación.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true
